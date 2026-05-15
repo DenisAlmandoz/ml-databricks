@@ -1,0 +1,6 @@
+input_path: data/raw/customers.csv
+model_output_path: models/customer_value_model.json
+metrics_output_path: models/metrics.json
+target_column: high_value
+random_state: 42
+test_size: 0.25

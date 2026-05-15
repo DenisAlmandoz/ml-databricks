@@ -1,0 +1,15 @@
+bundle:
+  name: mlops-project
+resources:
+  jobs:
+    customer_value_training:
+      name: customer-value-training
+      tasks:
+        - task_key: train
+          spark_python_task:
+            python_file: ../pipelines/training_pipeline.py
+            parameters: ["--config", "configs/train_config.yaml"]
+          new_cluster:
+            spark_version: 15.4.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            num_workers: 1

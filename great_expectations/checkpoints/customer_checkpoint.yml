@@ -1,0 +1,5 @@
+name: customer_contract_checkpoint
+validations:
+  - batch_request:
+      path: data/raw/customers.csv
+    expectation_suite_name: customer_contract_suite

@@ -1,0 +1,11 @@
+project_name: mlops-project
+environment: local
+data:
+  raw_path: data/raw/customers.csv
+  processed_path: data/processed/customers_features.csv
+model:
+  artifact_path: models/customer_value_model.json
+  registry_name: customer_value_model
+monitoring:
+  drift_threshold: 0.2
+  alert_email: mlops@example.com

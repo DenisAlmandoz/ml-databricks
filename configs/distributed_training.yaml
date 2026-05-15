@@ -1,0 +1,4 @@
+strategy: spark
+num_workers: 2
+worker_node_type: Standard_DS3_v2
+notes: "Starter config showing where Spark, Ray, or Horovod settings belong."

@@ -1,0 +1,1 @@
+"""MLOps fundamentals project."""
