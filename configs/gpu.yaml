@@ -1,0 +1,6 @@
+enabled: false
+node_type: Standard_NC4as_T4_v3
+cuda_version: "12.x"
+use_cases:
+  - deep_learning
+  - accelerated_explainability

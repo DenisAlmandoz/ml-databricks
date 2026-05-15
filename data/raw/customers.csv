@@ -1,0 +1,9 @@
+customer_id,age,annual_income,tenure_months,monthly_spend,support_tickets,plan_type,high_value
+C001,29,65000,14,120.5,1,pro,1
+C002,41,48000,6,55.0,3,basic,0
+C003,35,90000,28,220.0,0,enterprise,1
+C004,52,72000,18,130.0,2,pro,1
+C005,23,39000,3,35.0,1,basic,0
+C006,47,110000,36,310.0,0,enterprise,1
+C007,31,58000,11,80.0,4,basic,0
+C008,44,83000,22,175.0,1,pro,1

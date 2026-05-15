@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-value-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: customer-value-service}
+  template:
+    metadata:
+      labels: {app: customer-value-service}
+    spec:
+      containers:
+        - name: service
+          image: customer-value-service:latest
+          envFrom:
+            - secretRef: {name: mlops-secrets}
+          resources:
+            limits:
+              cpu: "1"
+              memory: "1Gi"

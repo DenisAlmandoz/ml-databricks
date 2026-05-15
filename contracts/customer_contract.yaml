@@ -1,0 +1,16 @@
+name: customer_value_contract
+version: 1
+owner: data-platform@example.com
+schema:
+  customer_id: {type: string, required: true, unique: true}
+  age: {type: integer, required: true, min: 18, max: 100}
+  annual_income: {type: number, required: true, min: 0}
+  tenure_months: {type: integer, required: true, min: 0}
+  monthly_spend: {type: number, required: true, min: 0}
+  support_tickets: {type: integer, required: true, min: 0}
+  plan_type: {type: string, required: true, allowed: [basic, pro, enterprise]}
+  high_value: {type: integer, required: true, allowed: [0, 1]}
+quality_rules:
+  - customer_id must be unique
+  - numeric columns must be non-negative
+  - plan_type must be basic, pro, or enterprise

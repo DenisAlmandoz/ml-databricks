@@ -1,0 +1,15 @@
+{
+  "features": {
+    "income_per_tenure": [
+      "annual_income",
+      "tenure_months"
+    ],
+    "spend_per_ticket": [
+      "monthly_spend",
+      "support_tickets"
+    ],
+    "plan_type_encoded": [
+      "plan_type"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+strategy: canary
+baseline_model: customer_value_model:1
+candidate_model: customer_value_model:2
+traffic_steps: [5, 25, 50, 100]
+rollback_metric: error_rate
+rollback_threshold: 0.05

@@ -1,0 +1,6 @@
+experiment: pricing-message-model
+variants:
+  A: {model: customer_value_model:1, traffic: 50}
+  B: {model: customer_value_model:2, traffic: 50}
+success_metric: conversion_rate
+minimum_sample_size: 1000
