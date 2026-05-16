@@ -8,4 +8,4 @@ model:
   registry_name: customer_value_model
 monitoring:
   drift_threshold: 0.2
-  alert_email: mlops@example.com
+  alert_email: denisalmandoz@gmail.com
